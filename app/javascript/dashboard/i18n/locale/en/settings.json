@@ -2,12 +2,12 @@
   "PROFILE_SETTINGS": {
     "LINK": "Profile Settings",
     "TITLE": "Profile Settings",
-    "BTN_TEXT": "Update Profile",
-    "DELETE_AVATAR": "Delete profile picture",
-    "AVATAR_DELETE_SUCCESS": "Profile picture deleted successfully",
-    "AVATAR_DELETE_FAILED": "An error occurred while deleting the profile picture, please try again",
-    "UPDATE_SUCCESS": "Your profile has been updated successfully.",
-    "PASSWORD_UPDATE_SUCCESS": "Your password has been changed successfully.",
+    "BTN_TEXT": "Update profile",
+    "DELETE_AVATAR": "Delete image",
+    "AVATAR_DELETE_SUCCESS": "Profile image deleted successfully",
+    "AVATAR_DELETE_FAILED": "An error occurred while deleting the profile image, please try again",
+    "UPDATE_SUCCESS": "Profile updated successfully.",
+    "PASSWORD_UPDATE_SUCCESS": "Password changed successfully.",
     "AFTER_EMAIL_CHANGED": "Profile updated successfully. Please log in again as your login credentials have been changed.",
     "FORM": {
       "AVATAR": "Profile Image",
@@ -22,7 +22,7 @@
       "SEND_MESSAGE": {
         "TITLE": "Hotkey to send messages",
         "NOTE": "Choose a hotkey to send your messages, based on your preferred writing style.",
-        "UPDATE_SUCCESS": "Your settings have been updated successfully.",
+        "UPDATE_SUCCESS": "Settings updated successfully.",
         "CARD": {
           "ENTER_KEY": {
             "HEADING": "Enter (↵)",
@@ -38,7 +38,7 @@
         "TITLE": "Personal message signature",
         "NOTE": "Personalize your emails and leave a lasting impression with a custom signature, easily created using the rich content editor. This signature will be added to every message you send from your email inbox.",
         "BTN_TEXT": "Save Message Signature",
-        "API_ERROR": "Couldn't save signature, try again",
+        "API_ERROR": "An error occurred while saving signature, please try again.",
         "API_SUCCESS": "Signature saved successfully"
       },
       "MESSAGE_SIGNATURE": {
@@ -62,13 +62,13 @@
           "TITLE": "Get alerts for:",
           "NONE": "None",
           "ASSIGNED": "Conversations assigned to me",
-          "ALL_CONVERSATIONS": "All Conversations"
+          "ALL_CONVERSATIONS": "All conversations"
         },
         "DEFAULT_TONE": {
-          "TITLE": "Alert tone:"
+          "TITLE": "Alert Tone:"
         },
         "CONDITIONS": {
-          "TITLE": "Alert conditions:",
+          "TITLE": "Alert Conditions:",
           "CONDITION_ONE": "Receive audio alerts only when the Chatwoot window is not active in your browser.",
           "CONDITION_TWO": "Receive audio alerts every 30 seconds until all the assigned conversations have been read."
         }
@@ -82,7 +82,7 @@
         "ASSIGNED_CONVERSATION_NEW_MESSAGE": "Get email notifications for new messages in conversations assigned to me."
       },
       "API": {
-        "UPDATE_SUCCESS": "Your notification preferences are updated successfully.",
+        "UPDATE_SUCCESS": "Notification preferences updated successfully.",
         "UPDATE_ERROR": "An error occurred while updating your preferences, please try again."
       },
       "PUSH_NOTIFICATIONS_SECTION": {
@@ -111,8 +111,8 @@
       "AVAILABILITY": {
         "LABEL": "Availability",
         "STATUSES_LIST": ["Online", "Busy", "Offline"],
-        "SET_AVAILABILITY_SUCCESS": "Availability has been set successfully.",
-        "SET_AVAILABILITY_ERROR": "Couldn't set availability, please try again."
+        "SET_AVAILABILITY_SUCCESS": "Availability set successfully.",
+        "SET_AVAILABILITY_ERROR": "An error occurred while setting availability, please try again."
       },
       "EMAIL": {
         "LABEL": "Your email address",
@@ -127,7 +127,7 @@
       "PASSWORD": {
         "LABEL": "New password",
         "ERROR": "Please provide a password of at least 6 characters.",
-        "PLACEHOLDER": "Type your new desired password."
+        "PLACEHOLDER": "Enter your new desired password."
       },
       "PASSWORD_CONFIRMATION": {
         "LABEL": "Confirm new password",
@@ -140,7 +140,7 @@
     "CHANGE_AVAILABILITY_STATUS": "Change",
     "CHANGE_ACCOUNTS": "Switch Account",
     "CONTACT_SUPPORT": "Contact Support",
-    "SELECTOR_SUBTITLE": "Select an account from the following list",
+    "SELECTOR_SUBTITLE": "Select an account from the following list.",
     "PROFILE_SETTINGS": "Profile Settings",
     "KEYBOARD_SHORTCUTS": "Keyboard Shortcuts",
     "SUPER_ADMIN_CONSOLE": "Super Admin Console",
@@ -268,7 +268,7 @@
     "API": {
       "SUCCESS_MESSAGE": "Account created successfully",
       "EXIST_MESSAGE": "Account already exists",
-      "ERROR_MESSAGE": "Could not connect to Woot Server, Please try again later"
+      "ERROR_MESSAGE": "Could not connect to Woot Server, please try again."
     },
     "FORM": {
       "NAME": {
