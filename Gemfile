@@ -156,6 +156,7 @@ group :development do
   gem 'bullet'
   gem 'letter_opener'
   gem 'web-console'
+  gem 'scss_lint', require: false
 
   # used in swagger build
   gem 'json_refs'
