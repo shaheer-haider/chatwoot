@@ -80,6 +80,7 @@
         "CONVERSATION_CREATION": "Get email notifications when a new conversation is created.",
         "CONVERSATION_MENTION": "Get email notifications I am mentioned in a conversation.",
         "ASSIGNED_CONVERSATION_NEW_MESSAGE": "Get email notifications for new messages in conversations assigned to me."
+        "PARTICIPATING_CONVERSATION_NEW_MESSAGE": "Get email notifications when a new message is created in a participating conversation."
       },
       "API": {
         "UPDATE_SUCCESS": "Notification preferences updated successfully.",
@@ -93,6 +94,7 @@
         "CONVERSATION_MENTION": "Get push notifications when I am mentioned in a conversation.",
         "ASSIGNED_CONVERSATION_NEW_MESSAGE": "Get push notifications for new messages in conversations assigned to me.",
         "HAS_ENABLED_PUSH": "You have enabled push notifications for this browser.",
+        "PARTICIPATING_CONVERSATION_NEW_MESSAGE": "Get push notifications when a message is created in a participating conversation.",
         "REQUEST_PUSH": "Enable push notifications"
       },
       "PROFILE_IMAGE": {
@@ -188,6 +190,7 @@
     "CONVERSATIONS": "Conversations",
     "ALL_CONVERSATIONS": "All conversations",
     "MENTIONED_CONVERSATIONS": "Mentions",
+    "PARTICIPATING_CONVERSATIONS": "Participating",
     "UNATTENDED_CONVERSATIONS": "Unattended",
     "REPORTS": "Reports",
     "SETTINGS": "Settings",
@@ -236,6 +239,7 @@
       "ARCHIVED": "Archived",
       "CATEGORY": "Category",
       "CATEGORY_EMPTY_MESSAGE": "No categories found."
+      "SETTINGS": "Settings",
     },
     "SET_AUTO_OFFLINE": {
       "TEXT": "Mark offline automatically",
