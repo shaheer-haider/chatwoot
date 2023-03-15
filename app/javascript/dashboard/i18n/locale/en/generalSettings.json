@@ -4,7 +4,7 @@
     "SUBMIT": "Update settings",
     "BACK": "Back",
     "UPDATE": {
-      "ERROR": "An error occurred while updating settings, please try again.",
+      "ERROR": "An error occurred while updating settings. Please try again.",
       "SUCCESS": "Account settings updated successfully."
     },
     "FORM": {

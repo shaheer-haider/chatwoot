@@ -4,7 +4,7 @@
     "HEADER_BTN_TXT": "Add macro",
     "HEADER_BTN_TXT_SAVE": "Save macro",
     "LOADING": "Fetching macros...",
-    "SIDEBAR_TXT": "<p><b>Macros</b><p>Macros are like magic spells. With just one click, you can execute a series of predefined actions such as labeling a conversation, sending an email transcript, or updating custom attributes. This streamlines workflows, boosts productivity, and ensures consistency in actions. </p><p>Plus, macros can be a lifesaver when onboarding new team members. Instead of explaining each step, managers and team leads can simply point to the macros used in different scenarios, saving time and effort.</p>",
+    "SIDEBAR_TXT": "<p><b>Macros</b><p>Macros are like magic spells. With just one click, you can execute a series of predefined actions, such as labeling a conversation, sending an email transcript, or updating custom attributes. This streamlines workflows, boosts productivity, and ensures consistency in actions.</p><p> Plus, macros can be a lifesaver when onboarding new team members. Instead of explaining each step, managers and team leads can simply point to the macros used in different scenarios, saving time and effort.</p> <p> You can manage your macros from this page or create new ones using the 'Add macro' button.</p><p>Open the Macros handbook in another tab for a helping hand.</p>",
     "ERROR": "Something went wrong. Please try again.",
     "ORDER_INFO": "Arrange your macro actions in the order you want them to be executed. Simply drag and drop the actions into the desired order using the handle beside each node.",
     "ADD": {

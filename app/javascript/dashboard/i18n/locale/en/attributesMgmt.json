@@ -3,7 +3,7 @@
     "HEADER": "Custom Attributes",
     "HEADER_BTN_TXT": "Add custom attribute",
     "LOADING": "Fetching custom attributes...",
-    "SIDEBAR_TXT": "<p><b>Custom attributes</b> <p>Custom attributes are like little tags that help you keep track of important information about your contacts or conversations. You can use them to note a customer's subscription plan, the date of their last interaction, or any other relevant information.</p> <p> To create a custom attribute, simply click the "Add custom attribute" button and follow the prompts. You can also edit or delete an existing custom attribute by clicking on the "Edit" or "Delete" button.</p> <p> Once you've created a custom attribute, you can add it to a contact or conversation from their respective sidebars.</p>",
+    "SIDEBAR_TXT": "<p><b>Custom attributes</b> <p>Custom attributes are like little tags that help you keep track of important information about your contacts or conversations. You can use them to note a customer's subscription plan, the date of their last interaction, or any other relevant information. You can apply these attributes to a contact or conversation from their respective sidebars.</p> <p> You can manage your custom attributes from this page or create new ones using the 'Add custom attribute' button.</p> Open the Custom Attributes handbook in another tab for a helping hand.</p>",
     "ADD": {
       "TITLE": "Add custom attribute",
       "SUBMIT": "Create",

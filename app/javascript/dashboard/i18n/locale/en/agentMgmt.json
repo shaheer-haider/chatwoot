@@ -3,7 +3,7 @@
     "HEADER": "Agents",
     "HEADER_BTN_TXT": "Add agent",
     "LOADING": "Fetching agent list",
-    "SIDEBAR_TXT": "<p><b>Agents</b></p> <p> An <b>Agent</b> is anyone from your team who can answer customer conversations. This page displays a list of all agents associated with your account. </p><p> Click 'Add agent' button on this page to bring in new team members. Upon being invited, they will receive a confirmation email with a link to activate their account and start responding to customer conversations. </p><p> There are two roles in Chatwoot: </p><p> <b>Agent</b> : Access to inboxes, reports, and conversations. Ability to assign and resolve conversations. </p><p> <b>Administrator</b> : Full access to all Chatwoot features and settings, in addition to Agent privileges.</p>",
+    "SIDEBAR_TXT": "<p><b>Agents</b></p> <p> An agent is a member of your team who can answer customer conversations. </p><p> You can manage your existing agents from this page or invite new members using the "Add agent" button. Upon being invited, they will receive a confirmation email with a link to activate their account and start saving the day, one customer at a time. </p><p> In Chatwoot, there are two types of roles: </p><p> <b>Agent</b> : This role provides access to inboxes, reports, and conversations. Agents can assign and resolve conversations as well. </p><p> <b>Administrator</b> : This role provides full access to all Chatwoot features and settings, in addition to agent privileges. Administrators have complete control over the account.</p> <p> Open the Agents handbook in another tab for a helping hand. </p>",
     "AGENT_TYPES": {
       "ADMINISTRATOR": "Administrator",
       "AGENT": "Agent"

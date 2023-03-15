@@ -4,7 +4,7 @@
     "HEADER_BTN_TXT": "Add label",
     "LOADING": "Fetching labels...",
     "SEARCH_404": "We couldn't find any labels that match your search. It's like searching for a unicorn, so try something else?",
-    "SIDEBAR_TXT": "<p><b>Labels</b> <p>Labeling conversations is like giving them their own colored folders - it's an easy way to organize and find them later! Just use the "Conversation Actions" menu while chatting to label a conversation. The labels will also appear on the secondary sidebar of the "Conversations" tab for quick filtering.</p>",
+    "SIDEBAR_TXT": "<p><b>Labels</b> <p>Labeling conversations or contacts is like giving them colored folders – an easy way to organize and find them later. Just use the 'Conversation Actions' menu while chatting to label a conversation. The labels will also appear on the secondary sidebar of the 'Conversations' or 'Contacts' tab for quick filtering.</p> <p> You can manage your existing labels from this page or create new ones using the 'Add label' button. </p> <p> Open the Labels handbook in another tab for a helping hand.</p>",
     "LIST": {
       "404": "There are no labels available in this account.",
       "TITLE": "Manage labels",

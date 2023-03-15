@@ -2,7 +2,7 @@
   "TEAMS_SETTINGS": {
     "NEW_TEAM": "Add team",
     "HEADER": "Teams",
-    "SIDEBAR_TXT": "<p><b>Teams</b></p> <p>Round up the troops! Teams are a great way to organize your agents based on their roles and responsibilities. <br /> Your agents can be part of multiple teams. You can assign conversations to a team when you are working collaboratively. </p>",
+    "SIDEBAR_TXT": "<p><b>Teams</b></p> <p>Round up the troops! Teams are a great way to organize your agents based on their roles and responsibilities. <br /> Your agents can be part of multiple teams. You can assign conversations to a team when you are working collaboratively. </p> <p> You can manage your existing teams from this page or make new ones using the 'Add team' button.</p> <p> Open the Teams handbook in another tab for a helping hand.</p>",
     "LIST": {
       "404": "There are no teams created in your account.",
       "EDIT_TEAM": "Edit team"

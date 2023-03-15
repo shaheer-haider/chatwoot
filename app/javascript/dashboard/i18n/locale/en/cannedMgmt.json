@@ -4,7 +4,7 @@
     "HEADER_BTN_TXT": "Add canned response",
     "LOADING": "Fetching canned responses...",
     "SEARCH_404": "There are no items matching this query.",
-    "SIDEBAR_TXT": "<p><b>Canned Responses</b> </p><p> Canned Responses are pre-written reply templates that help you quickly respond to a conversation. To insert a canned response during a chat, agents can type a short code preceded by a '/' character. </p><p> Create and manage your canned responses from this page. To create a canned response, click the "Add canned response" button and follow the prompts.</p>",
+    "SIDEBAR_TXT": "<p><b>Canned Responses</b> </p><p> Canned Responses are pre-written reply templates that help you quickly respond to a conversation. To insert a canned response during a chat, agents can type a short code preceded by a '/' character. </p><p> You can manage your canned responses from this page or create new ones using the "Add canned response" button.</p><p>Open the Canned Responses handbook in another tab for a helping hand.</p>",
     "LIST": {
       "404": "There are no canned responses available in this account.",
       "TITLE": "Manage canned responses",
