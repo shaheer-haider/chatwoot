@@ -10,7 +10,7 @@
     "FORM": {
       "ERROR": "Please fix form errors.",
       "GENERAL_SECTION": {
-        "TITLE": "General Settings",
+        "TITLE": "General settings",
         "NOTE": ""
       },
       "ACCOUNT_ID": {
@@ -34,11 +34,11 @@
       },
       "SUPPORT_EMAIL": {
         "LABEL": "Support email",
-        "PLACEHOLDER": "Please enter your company's support email",
+        "PLACEHOLDER": "Please enter your company's support email.",
         "ERROR": ""
       },
       "AUTO_RESOLVE_DURATION": {
-        "LABEL": "Number of days after a ticket should auto resolve if there is no activity",
+        "LABEL": "Number of days after a ticket should auto resolve if there is no activity.",
         "PLACEHOLDER": "30",
         "ERROR": "Please enter a valid auto-resolve duration between 1-999 days (inclusive)."
       },
@@ -52,36 +52,36 @@
   },
   "FORMS": {
     "MULTISELECT": {
-      "ENTER_TO_SELECT": "Press enter to select",
-      "ENTER_TO_REMOVE": "Press enter to remove",
+      "ENTER_TO_SELECT": "Press Enter to select",
+      "ENTER_TO_REMOVE": "Press Enter to remove",
       "SELECT_ONE": "Select one",
       "SELECT": "Select"
     }
   },
   "NOTIFICATIONS_PAGE": {
     "HEADER": "Notifications",
-    "MARK_ALL_DONE": "Mark All Done",
-    "DELETE_TITLE": "deleted",
+    "MARK_ALL_DONE": "Mark all done",
+    "DELETE_TITLE": "Deleted",
     "UNREAD_NOTIFICATION": {
-      "TITLE": "Unread Notifications",
+      "TITLE": "Unread notifications",
       "ALL_NOTIFICATIONS": "View all notifications",
       "LOADING_UNREAD_MESSAGE": "Loading unread notifications...",
       "EMPTY_MESSAGE": "You have no unread notifications"
     },
     "LIST": {
       "LOADING_MESSAGE": "Loading notifications...",
-      "404": "No Notifications",
+      "404": "No notifications",
       "TABLE_HEADER": [
         "Name",
-        "Phone Number",
+        "Phone number",
         "Conversations",
-        "Last Contacted"
+        "Last contacted"
       ]
     },
     "TYPE_LABEL": {
       "conversation_creation": "New conversation",
-      "conversation_assignment": "Conversation Assigned",
-      "assigned_conversation_new_message": "New Message",
+      "conversation_assignment": "Conversation assigned",
+      "assigned_conversation_new_message": "New message",
       "conversation_mention": "Mention"
     }
   },
@@ -99,7 +99,7 @@
       "GENERAL": "General",
       "REPORTS": "Reports",
       "CONVERSATION": "Conversation",
-      "CHANGE_ASSIGNEE": "Change Assignee",
+      "CHANGE_ASSIGNEE": "Change assignee",
       "CHANGE_TEAM": "Change Team",
       "ADD_LABEL": "Add label to the conversation",
       "REMOVE_LABEL": "Remove label from the conversation",

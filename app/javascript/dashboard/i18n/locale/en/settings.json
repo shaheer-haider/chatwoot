@@ -4,14 +4,14 @@
     "TITLE": "Profile Settings",
     "BTN_TEXT": "Update profile",
     "DELETE_AVATAR": "Delete image",
-    "AVATAR_DELETE_SUCCESS": "Profile image deleted successfully",
-    "AVATAR_DELETE_FAILED": "An error occurred while deleting the profile image, please try again",
+    "AVATAR_DELETE_SUCCESS": "Profile image deleted successfully.",
+    "AVATAR_DELETE_FAILED": "An error occurred while deleting the profile image, please try again.",
     "UPDATE_SUCCESS": "Profile updated successfully.",
     "PASSWORD_UPDATE_SUCCESS": "Password changed successfully.",
     "AFTER_EMAIL_CHANGED": "Profile updated successfully. Please log in again as your login credentials have been changed.",
     "FORM": {
-      "AVATAR": "Profile Image",
-      "ERROR": "Please fix form errors",
+      "AVATAR": "Profile image",
+      "ERROR": "Please fix form errors.",
       "REMOVE_IMAGE": "Remove",
       "UPLOAD_IMAGE": "Upload image",
       "UPDATE_IMAGE": "Update image",
@@ -37,13 +37,13 @@
       "MESSAGE_SIGNATURE_SECTION": {
         "TITLE": "Personal message signature",
         "NOTE": "Personalize your emails and leave a lasting impression with a custom signature, easily created using the rich content editor. This signature will be added to every message you send from your email inbox.",
-        "BTN_TEXT": "Save Message Signature",
+        "BTN_TEXT": "Save message signature",
         "API_ERROR": "An error occurred while saving signature, please try again.",
-        "API_SUCCESS": "Signature saved successfully"
+        "API_SUCCESS": "Signature saved successfully."
       },
       "MESSAGE_SIGNATURE": {
-        "LABEL": "Message Signature",
-        "ERROR": "Message Signature cannot be empty.",
+        "LABEL": "Message signature",
+        "ERROR": "Message signature cannot be empty.",
         "PLACEHOLDER": "Take a deep breath and start crafting your email signature here. You can include your title, social media links, contact deets, and, maybe, a touch of humor?"
       },
       "PASSWORD_SECTION": {
@@ -52,11 +52,11 @@
         "BTN_TEXT": "Change password"
       },
       "ACCESS_TOKEN": {
-        "TITLE": "Access Token",
+        "TITLE": "Access token",
         "NOTE": "Copy the following token when building an API-based integration."
       },
       "AUDIO_NOTIFICATIONS_SECTION": {
-        "TITLE": "Audio Notifications",
+        "TITLE": "Audio notifications",
         "NOTE": "Get audio alerts in the dashboard for new messages and conversations.",
         "ALERT_TYPE": {
           "TITLE": "Get alerts for:",
@@ -65,16 +65,16 @@
           "ALL_CONVERSATIONS": "All conversations"
         },
         "DEFAULT_TONE": {
-          "TITLE": "Alert Tone:"
+          "TITLE": "Alert tone:"
         },
         "CONDITIONS": {
-          "TITLE": "Alert Conditions:",
+          "TITLE": "Alert conditions:",
           "CONDITION_ONE": "Receive audio alerts only when the Chatwoot window is not active in your browser.",
           "CONDITION_TWO": "Receive audio alerts every 30 seconds until all the assigned conversations have been read."
         }
       },
       "EMAIL_NOTIFICATIONS_SECTION": {
-        "TITLE": "Email Notifications",
+        "TITLE": "Email notifications",
         "NOTE": "Update your email notification preferences here.",
         "CONVERSATION_ASSIGNMENT": "Get email notifications when a conversation is assigned to me.",
         "CONVERSATION_CREATION": "Get email notifications when a new conversation is created.",
@@ -86,7 +86,7 @@
         "UPDATE_ERROR": "An error occurred while updating your preferences, please try again."
       },
       "PUSH_NOTIFICATIONS_SECTION": {
-        "TITLE": "Push Notifications",
+        "TITLE": "Push notifications",
         "NOTE": "Update your push notification preferences here.",
         "CONVERSATION_ASSIGNMENT": "Get push notifications when a conversation is assigned to me.",
         "CONVERSATION_CREATION": "Get push notifications when a new conversation is created.",
@@ -96,7 +96,7 @@
         "REQUEST_PUSH": "Enable push notifications"
       },
       "PROFILE_IMAGE": {
-        "LABEL": "Profile Image"
+        "LABEL": "Profile image"
       },
       "NAME": {
         "LABEL": "Your full name",
@@ -111,7 +111,7 @@
       "AVAILABILITY": {
         "LABEL": "Availability",
         "STATUSES_LIST": ["Online", "Busy", "Offline"],
-        "SET_AVAILABILITY_SUCCESS": "Availability set successfully.",
+        "SET_AVAILABILITY_SUCCESS": "Availability updated successfully.",
         "SET_AVAILABILITY_ERROR": "An error occurred while setting availability, please try again."
       },
       "EMAIL": {
@@ -148,21 +148,21 @@
   },
   "APP_GLOBAL": {
     "TRIAL_MESSAGE": "days trial remaining.",
-    "TRAIL_BUTTON": "Buy Now",
-    "DELETED_USER": "Deleted User",
+    "TRAIL_BUTTON": "Buy now",
+    "DELETED_USER": "Deleted user",
     "ACCOUNT_SUSPENDED": {
-      "TITLE": "Account Suspended",
+      "TITLE": "Account suspended",
       "MESSAGE": "Your account is suspended. Please reach out to the support team for more information."
     }
   },
   "COMPONENTS": {
     "CODE": {
       "BUTTON_TEXT": "Copy",
-      "COPY_SUCCESSFUL": "Copied to clipboard"
+      "COPY_SUCCESSFUL": "Copied to clipboard."
     },
     "SHOW_MORE_BLOCK": {
-      "SHOW_MORE": "Show More",
-      "SHOW_LESS": "Show Less"
+      "SHOW_MORE": "Show more",
+      "SHOW_LESS": "Show less"
     },
     "FILE_BUBBLE": {
       "DOWNLOAD": "Download",
@@ -186,7 +186,7 @@
     "CURRENTLY_VIEWING_ACCOUNT": "Currently viewing:",
     "SWITCH": "Switch",
     "CONVERSATIONS": "Conversations",
-    "ALL_CONVERSATIONS": "All Conversations",
+    "ALL_CONVERSATIONS": "All conversations",
     "MENTIONED_CONVERSATIONS": "Mentions",
     "UNATTENDED_CONVERSATIONS": "Unattended",
     "REPORTS": "Reports",
@@ -210,7 +210,7 @@
     "BILLING": "Billing",
     "CUSTOM_VIEWS_FOLDER": "Folders",
     "CUSTOM_VIEWS_SEGMENTS": "Segments",
-    "ALL_CONTACTS": "All Contacts",
+    "ALL_CONTACTS": "All contacts",
     "TAGGED_WITH": "Tagged with",
     "NEW_LABEL": "New label",
     "NEW_TEAM": "New team",
@@ -235,44 +235,44 @@
       "DRAFT": "Draft",
       "ARCHIVED": "Archived",
       "CATEGORY": "Category",
-      "CATEGORY_EMPTY_MESSAGE": "No categories found"
+      "CATEGORY_EMPTY_MESSAGE": "No categories found."
     },
     "SET_AUTO_OFFLINE": {
       "TEXT": "Mark offline automatically",
-      "INFO_TEXT": "Let the system automatically mark you offline when you aren't using the app or dashboard."
+      "INFO_TEXT": "Let the system automatically mark you as offline when you aren't using the app or dashboard."
     },
     "DOCS": "Read docs"
   },
   "BILLING_SETTINGS": {
     "TITLE": "Billing",
     "CURRENT_PLAN": {
-      "TITLE": "Current Plan",
-      "PLAN_NOTE": "You are currently subscribed to the **%{plan}** plan with **%{quantity}** licenses"
+      "TITLE": "Current plan",
+      "PLAN_NOTE": "You are currently subscribed to the **%{plan}** plan with **%{quantity}** licenses."
     },
     "MANAGE_SUBSCRIPTION": {
       "TITLE": "Manage your subscription",
       "DESCRIPTION": "View your previous invoices, edit your billing details, or cancel your subscription.",
-      "BUTTON_TXT": "Go to the billing portal"
+      "BUTTON_TXT": "Go to the billing portal."
     },
     "CHAT_WITH_US": {
       "TITLE": "Need help?",
-      "DESCRIPTION": "Do you face any issues in billing? We are here to help.",
+      "DESCRIPTION": "Are you facing any issues in billing? We are here to help.",
       "BUTTON_TXT": "Chat with us"
     },
-    "NO_BILLING_USER": "Your billing account is being configured. Please refresh the page and try again."
+    "NO_BILLING_USER": "Your billing account is being set up. Please refresh the page and try again."
   },
   "CREATE_ACCOUNT": {
     "NO_ACCOUNT_WARNING": "Uh oh! We could not find any Chatwoot accounts. Please create a new account to continue.",
-    "NEW_ACCOUNT": "New Account",
+    "NEW_ACCOUNT": "New account",
     "SELECTOR_SUBTITLE": "Create a new account",
     "API": {
-      "SUCCESS_MESSAGE": "Account created successfully",
-      "EXIST_MESSAGE": "Account already exists",
-      "ERROR_MESSAGE": "Could not connect to Woot Server, please try again."
+      "SUCCESS_MESSAGE": "Account created successfully.",
+      "EXIST_MESSAGE": "Account already exists.",
+      "ERROR_MESSAGE": "Could not connect to Woot server, please try again."
     },
     "FORM": {
       "NAME": {
-        "LABEL": "Company Name",
+        "LABEL": "Company name",
         "PLACEHOLDER": "Wayne Enterprises"
       },
       "SUBMIT": "Submit"
