@@ -35,6 +35,7 @@ Rails.application.routes.draw do
       resources :accounts, only: [:create, :show, :update] do
         member do
           post :update_active_at
+          get :cache_keys
         end
 
         scope module: :accounts do
@@ -45,6 +46,7 @@ Rails.application.routes.draw do
           resources :agents, only: [:index, :create, :update, :destroy]
           resources :agent_bots, only: [:index, :create, :show, :update, :destroy]
           resources :assignable_agents, only: [:index]
+          resource :audit_logs, only: [:show]
           resources :callbacks, only: [] do
             collection do
               post :register_facebook_page
@@ -258,6 +260,7 @@ Rails.application.routes.draw do
             get :labels
             get :teams
             get :conversations
+            get :conversation_traffic
           end
         end
       end

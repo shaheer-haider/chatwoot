@@ -21,6 +21,7 @@ lv:
   messages:
     reset_password_success: Urā! Paroles atiestatīšanas pieprasījums ir veiksmīgs. Pārbaudiet savu e-pastu, lai iegūtu norādījumus.
     reset_password_failure: Ak, vai! Mēs nevarējām atrast nevienu lietotāju ar norādīto e -pastu.
+    inbox_deletetion_response: Jūsu iesūtnes dzēšanas pieprasījums pēc kāda laika tiks apstrādāts.
   errors:
     validations:
       presence: nedrīkst būt tukšs
@@ -57,6 +58,7 @@ lv:
         name: nevajadzētu sākties vai beigties ar simboliem, un nevajadzētu saturēt <> / \ @ rakstzīmes.
   reports:
     period: Ziņošanas periods %{since} līdz %{until}
+    utc_warning: Izveidotais pārskats atbilst UTC laika joslai
     agent_csv:
       agent_name: Aģenta vārds
       conversations_count: Sarunu skaits
@@ -78,6 +80,9 @@ lv:
       conversations_count: Sarunu skaits
       avg_first_response_time: Vidējais pirmās atbildes laiks (Minūtes)
       avg_resolution_time: Vidējais atrisinājuma laiks (Minūtes)
+    conversation_traffic_csv:
+      date: Datums un laiks
+      conversations_count: Sarunu skaits
     default_group_by: diena
     csat:
       headers:
@@ -129,12 +134,12 @@ lv:
     reply:
       email:
         header:
-          from_with_name: '%{assignee_name} no %{inbox_name} <%{from_email}>'
-          reply_with_name: '%{assignee_name} no %{inbox_name} <reply+%{reply_email}>'
+          from_with_name: "%{assignee_name} no %{inbox_name} <%{from_email}>"
+          reply_with_name: "%{assignee_name} no %{inbox_name} <reply+%{reply_email}>"
       channel_email:
         header:
-          reply_with_name: '%{assignee_name} no <%{from_email}>'
-          reply_with_inbox_name: '%{inbox_name} <%{from_email}>'
+          reply_with_name: "%{assignee_name} no %{inbox_name}"
+          reply_with_inbox_name: "%{inbox_name} <%{from_email}>"
       email_subject: "Jauni ziņojumi šajā sarunā"
       transcript_subject: "Sarunas Transkripts"
     survey:
@@ -172,12 +177,12 @@ lv:
       sub_title: Meklējiet rakstus šeit, vai pārlūkojiet tālāk norādītās kategorijas.
     common:
       home: Sākums
-      last_updated_on: Last updated on %{last_updated_on}
-      view_all_articles: View all articles
-      article: article
+      last_updated_on: Pēdējo reizi atjaunināts %{last_updated_on}
+      view_all_articles: Skatīt visus rakstus
+      article: raksts
       articles: raksti
-      no_articles: There are no articles here
+      no_articles: Šeit nav neviena raksta
     footer:
-      made_with: Made with
+      made_with: Veidots ar
     header:
-      go_to_homepage: Go to the main site
+      go_to_homepage: Doties uz galveno vietni
