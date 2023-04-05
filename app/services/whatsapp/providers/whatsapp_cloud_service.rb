@@ -27,7 +27,7 @@ class Whatsapp::Providers::WhatsappCloudService < Whatsapp::Providers::BaseServi
 
     return unless response.success?
 
-    whatsapp_channel.update(message_templates: response['data'], message_templates_last_updated: Time.now.utc)
+    save_templates(response)
     fetch_next_templates(response)
   end
 
@@ -49,11 +49,15 @@ class Whatsapp::Providers::WhatsappCloudService < Whatsapp::Providers::BaseServi
       break unless response['paging'] && response['paging']['next']
 
       response = HTTParty.get(response['paging']['next'])
-      whatsapp_channel.update(message_templates: response['data'], message_templates_last_updated: Time.now.utc) if response.success?
+      save_templates(response)
     end
   end
 
   private
+
+  def save_templates(response)
+    whatsapp_channel.update(message_templates: response['data'], message_templates_last_updated: Time.now.utc) if response.success?
+  end
 
   def api_base_path
     ENV.fetch('WHATSAPP_CLOUD_BASE_URL', 'https://graph.facebook.com')
