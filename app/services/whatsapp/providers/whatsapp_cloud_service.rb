@@ -27,8 +27,9 @@ class Whatsapp::Providers::WhatsappCloudService < Whatsapp::Providers::BaseServi
 
     return unless response.success?
 
-    save_templates(response)
+    @templates = response['data']
     fetch_next_templates(response)
+    save_templates
   end
 
   def validate_provider_config?
@@ -49,15 +50,18 @@ class Whatsapp::Providers::WhatsappCloudService < Whatsapp::Providers::BaseServi
       break unless response['paging'] && response['paging']['next']
 
       response = HTTParty.get(response['paging']['next'])
-      save_templates(response)
+      push_templates(response)
     end
-    true
   end
 
   private
 
-  def save_templates(response)
-    whatsapp_channel.update(message_templates: response['data'], message_templates_last_updated: Time.now.utc) if response.success?
+  def push_templates(response)
+    @templates << response['data'] if response.success? && response['data'].any?
+  end
+
+  def save_templates
+    whatsapp_channel.update(message_templates: @templates, message_templates_last_updated: Time.now.utc)
   end
 
   def api_base_path
