@@ -51,6 +51,7 @@ class Whatsapp::Providers::WhatsappCloudService < Whatsapp::Providers::BaseServi
       response = HTTParty.get(response['paging']['next'])
       save_templates(response)
     end
+    true
   end
 
   private
