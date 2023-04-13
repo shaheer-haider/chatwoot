@@ -6,11 +6,11 @@
         :alt="globalConfig.installationName"
         class="hero__logo"
       />
-      <h2 class="hero__title">
+      <h3 class="hero__title">
         {{
           useInstallationName($t('LOGIN.TITLE'), globalConfig.installationName)
         }}
-      </h2>
+      </h3>
     </section>
     <section class="row align-center">
       <div v-if="!email" class="small-12 medium-4 column">
