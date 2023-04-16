@@ -6,7 +6,7 @@ import axios from 'axios';
 import hljs from 'highlight.js';
 import Multiselect from 'vue-multiselect';
 import VueFormulate from '@braid/vue-formulate';
-import WootSwitch from 'components/ui/Switch';
+import WootSwitch from 'components/ui/Switch.vue';
 import WootWizard from 'components/ui/Wizard';
 import { sync } from 'vuex-router-sync';
 import Vuelidate from 'vuelidate';
