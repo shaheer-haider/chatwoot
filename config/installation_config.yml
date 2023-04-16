@@ -3,7 +3,7 @@
 - name: INSTALLATION_NAME
   value: 'Unified Social Media'
 - name: LOGO_THUMBNAIL
-  value: '/brand-assets/logo_thumbnail.svg'
+  value: '/brand-assets/logo_thumbnail.webp'
 - name: LOGO
   value: '/brand-assets/logo.webp'
 - name: BRAND_URL
