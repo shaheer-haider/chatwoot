@@ -45,6 +45,7 @@ services:
     volumes:
       - redis-data:/data
 
+
   mailhog:
     restart: unless-stopped
     image: mailhog/mailhog
