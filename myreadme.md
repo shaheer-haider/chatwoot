@@ -29,3 +29,22 @@ docker-compose up
 ~~~~
 docker run -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=postgres -p 5432:5432 -d postgres:12
 ~~~~
+
+Run docker of minikube
+~~~~
+eval $(minikube docker-env --shell bash)
+~~~~
+
+Authenticate Docker in AWS ECR
+~~~~
+aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 454848198532.dkr.ecr.us-east-1.amazonaws.com
+~~~~
+Tag the image to Push in ECR
+~~~~
+docker tag alnafi_chatwoot:latest 454848198532.dkr.ecr.us-east-1.amazonaws.com/alnafi_chatwoot:latest
+~~~~
+Push in ECR
+~~~~
+docker push 454848198532.dkr.ecr.us-east-1.amazonaws.com/alnafi_chatwoot:latest
+~~~~
+
