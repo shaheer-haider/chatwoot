@@ -64,3 +64,4 @@ test/cypress/videos/*
 .vscode/settings.json
 # yalc for local testing
 .yalc
+.vscode
