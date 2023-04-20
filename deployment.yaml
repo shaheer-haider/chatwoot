@@ -19,11 +19,11 @@ spec:
           image: 454848198532.dkr.ecr.us-east-1.amazonaws.com/alnafi_chatwoot:latest
           resources:
             limits:
-              cpu: "4"
-              memory: "4Gi"
-            requests:
               cpu: "2"
               memory: "2Gi"
+            requests:
+              cpu: "1"
+              memory: "1Gi"
           env:
             - name: NODE_ENV
               value: "production"
@@ -39,11 +39,11 @@ spec:
         - name: sidekiq
           resources:
             limits:
-              cpu: "2"
-              memory: "2Gi"
-            requests:
               cpu: "1"
               memory: "1Gi"
+            requests:
+              cpu: "0.5"
+              memory: "512Mi"
           image: 454848198532.dkr.ecr.us-east-1.amazonaws.com/alnafi_chatwoot:latest
           env:
             - name: NODE_ENV
@@ -85,11 +85,11 @@ spec:
 
           resources:
             limits:
-              cpu: "2"
-              memory: "2Gi"
-            requests:
               cpu: "1"
-              memory: "1Mi"
+              memory: "1Gi"
+            requests:
+              cpu: "0.5"
+              memory: "500Mi"
 
           volumeMounts:
             - name: redis
