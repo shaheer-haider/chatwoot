@@ -48,3 +48,9 @@ Push in ECR
 docker push 454848198532.dkr.ecr.us-east-1.amazonaws.com/alnafi_chatwoot:latest
 ~~~~
 
+Create Secret
+~~~~
+kubectl create secret generic ecr-key \
+                                           --from-file=.dockerconfigjson=.docker/config.json \
+                                           --type=kubernetes.io/dockerconfigjson
+~~~~
