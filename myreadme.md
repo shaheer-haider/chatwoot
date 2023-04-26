@@ -71,8 +71,3 @@ docker tag alnafi_chatwoot:$(git rev-parse --short HEAD) 454848198532.dkr.ecr.us
 ~~~~
 docker push 454848198532.dkr.ecr.us-east-1.amazonaws.com/alnafi_chatwoot:$(git rev-parse --short HEAD)
 ~~~~
-
-#### Update Image Tag ENV for Docker Compose
-~~~~
-export IMAGE_TAG=$(bash ./current-image.sh)
-~~~~
