@@ -18,7 +18,7 @@ docker-compose -f docker-compose.production.yaml run --rm rails bundle exec rail
 
 ## Run the application
 ~~~~
-docker-compose up
+docker-compose up -e IMAGE_TAG=$IMAGE_TAG
 ~~~~
 
 #
@@ -53,4 +53,26 @@ Create Secret
 kubectl create secret generic ecr-key \
                                            --from-file=.dockerconfigjson=.docker/config.json \
                                            --type=kubernetes.io/dockerconfigjson
+~~~~
+
+## Docker Commands for ECR (it'll only work in bash)
+#### Build
+~~~~
+docker build -f docker/Dockerfile -t alnafi_chatwoot:$(git rev-parse --short HEAD)
+~~~~
+
+#### Tag the image to push in ECR
+~~~~
+docker tag alnafi_chatwoot:$(git rev-parse --short HEAD) 454848198532.dkr.ecr.us-east-1.amazonaws.com/alnafi_chatwoot:$(git rev-parse --short HEAD)
+~~~~
+
+
+#### Push the image
+~~~~
+docker push 454848198532.dkr.ecr.us-east-1.amazonaws.com/alnafi_chatwoot:$(git rev-parse --short HEAD)
+~~~~
+
+#### Update Image Tag ENV for Docker Compose
+~~~~
+export IMAGE_TAG=$(bash ./current-image.sh)
 ~~~~
