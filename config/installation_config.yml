@@ -7,15 +7,15 @@
 - name: LOGO
   value: '/brand-assets/logo.webp'
 - name: BRAND_URL
-  value: 'https://www.chatwoot.com'
+  value: 'https://chat.alnafi.com'
 - name: WIDGET_BRAND_URL
-  value: 'https://www.chatwoot.com'
+  value: 'https://chat.alnafi.com'
 - name: BRAND_NAME
   value: 'Unified Social Media'
 - name: TERMS_URL
-  value: 'https://www.chatwoot.com/terms-of-service'
+  value: 'https://chat.alnafi.com/terms-of-service'
 - name: PRIVACY_URL
-  value: 'https://www.chatwoot.com/privacy-policy'
+  value: 'https://chat.alnafi.com/privacy-policy'
 - name: DISPLAY_MANIFEST
   value: true
 - name: MAILER_INBOUND_EMAIL_DOMAIN
