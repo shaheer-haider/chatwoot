@@ -8,6 +8,7 @@ import { frontendURL } from '../../helper/URLHelper';
 import helpcenterRoutes from './helpcenter/helpcenter.routes';
 
 const Suspended = () => import('./suspended/Index');
+const Monitoring = () => import('./monitoring/Index.vue');
 
 export default {
   routes: [
@@ -28,6 +29,12 @@ export default {
       name: 'account_suspended',
       roles: ['administrator', 'agent'],
       component: Suspended,
+    },
+    {
+      path: frontendURL('accounts/:accountId/monitoring'),
+      name: 'monitoring',
+      roles: ['administrator', 'agent'],
+      component: Monitoring,
     },
   ],
 };

@@ -54,6 +54,14 @@ const primaryMenuItems = accountId => [
     toStateName: 'settings_home',
     roles: ['administrator', 'agent'],
   },
+  {
+    icon: 'arrow-trending-lines',
+    key: 'monitoring',
+    label: 'MONITORING',
+    toState: frontendURL(`accounts/${accountId}/monitoring`),
+    toStateName: 'monitoring',
+    roles: ['administrator', 'agent'],
+  },
 ];
 
 export default primaryMenuItems;
