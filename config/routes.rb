@@ -426,4 +426,9 @@ Rails.application.routes.draw do
   # ----------------------------------------------------------------------
   # Routes for testing
   resources :widget_tests, only: [:index] unless Rails.env.production?
+
+  # Live User Monitoring Routes
+  get 'api/v1/accounts/:account_id/monitoring', to: 'api/v0/users_activity#inboxes'
+  get 'api/v1/accounts/:account_id/monitoring/:inbox_id', to: 'api/v0/users_activity#get'
+  post 'api/v1/accounts/:account_id/monitoring/:inbox_id', to: 'api/v0/users_activity#create'
 end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_05_15_051424) do
+ActiveRecord::Schema[7.0].define(version: 2023_05_23_065459) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_stat_statements"
   enable_extension "pg_trgm"
@@ -868,6 +868,17 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_15_051424) do
     t.integer "account_id"
     t.datetime "created_at", precision: nil, null: false
     t.datetime "updated_at", precision: nil, null: false
+  end
+
+  create_table "user_activities", force: :cascade do |t|
+    t.datetime "visited_at"
+    t.string "country"
+    t.string "page_url"
+    t.integer "inbox_id"
+    t.string "ip_address"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "account_id"
   end
 
   create_table "users", id: :serial, force: :cascade do |t|

@@ -1,5 +1,5 @@
 <template>
-  <div class="row app-wrapper">
+  <div class="flex h-screen">
     <sidebar
       :route="currentRoute"
       @toggle-account-modal="toggleAccountModal"
@@ -7,12 +7,81 @@
       @open-key-shortcut-modal="toggleKeyShortcutModal"
       @close-key-shortcut-modal="closeKeyShortcutModal"
     />
-    <h1>Monitoring</h1>
+    <section class="p-4 w-full">
+      <div class="border-light p-4">
+        <div>
+          <h1>Monitoring</h1>
+          <div class="bg-light">
+            <div
+              v-for="(inbox, index) in inboxes"
+              :key="index"
+              class="border-b-light-3 p-4 mb-28px"
+            >
+              <label
+                for="accordion-item-1"
+                class="accordion-item-label text-xl"
+              >
+                {{ inbox.name }}
+              </label>
+              <div class="block max-h-600px overflow-y-scroll border-light">
+                <table class="border-b-light-3 p-2">
+                  <thead>
+                    <tr>
+                      <td
+                        class="border-b-light-2 py-1 px-2 border-b-none font-medium"
+                      >
+                        IP
+                      </td>
+                      <td
+                        class="border-b-light-2 py-1 px-2 border-b-none font-medium"
+                      >
+                        Previous Page
+                      </td>
+                      <td
+                        class="border-b-light-2 py-1 px-2 border-b-none font-medium"
+                      >
+                        Current Page
+                      </td>
+                      <td
+                        class="border-b-light-2 py-1 px-2 border-b-none font-medium"
+                      >
+                        Country
+                      </td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr
+                      v-for="(active_user,
+                      active_user_index) in inbox.active_users"
+                      :key="active_user_index"
+                    >
+                      <td class="border-b-light-2 py-1 px-2 border-b-none">
+                        {{ active_user }}
+                      </td>
+                      <td class="border-b-light-2 py-1 px-2 border-b-none">
+                        Gill
+                      </td>
+                      <td class="border-b-light-2 py-1 px-2 border-b-none">
+                        Smith
+                      </td>
+                      <td class="border-b-light-2 py-1 px-2 border-b-none">
+                        50
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 <script>
+import './assets/monitoring.style.css';
 import Sidebar from 'dashboard/components/layout/Sidebar';
-
+import MonitoringApiClient from '../../../api/monitoring';
 export default {
   components: {
     Sidebar,
@@ -25,9 +94,9 @@ export default {
       showAddCategoryModal: false,
       lastActivePortalSlug: '',
       showAccountModal: false,
+      inboxes: [],
     };
   },
-
   computed: {
     isSidebarOpen() {
       const {
@@ -66,6 +135,10 @@ export default {
     },
   },
 
+  mounted() {
+    this.fetchWebInboxes();
+  },
+
   methods: {
     toggleKeyShortcutModal() {
       this.showShortcutModal = true;
@@ -78,6 +151,12 @@ export default {
     },
     toggleAccountModal() {
       this.showAccountModal = !this.showAccountModal;
+    },
+    async fetchWebInboxes() {
+      this.inboxes = (await MonitoringApiClient.getAllSites()).data;
+    },
+    async fetchInboxUsers() {
+      this.inboxes = (await MonitoringApiClient.getAllSites()).data;
     },
   },
 };

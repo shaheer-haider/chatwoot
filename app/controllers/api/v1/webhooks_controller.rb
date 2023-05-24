@@ -25,4 +25,9 @@ class Api::V1::WebhooksController < ApplicationController
   def twitter_consumer
     @twitter_consumer ||= ::Webhooks::Twitter.new(params)
   end
+
 end
+
+
+# class Api::V1::UsersActivityController < ApplicationController
+# end
