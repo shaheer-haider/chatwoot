@@ -1,4 +1,6 @@
+# class Api::V0::UsersActivityController < ApplicationController
 class Api::V0::UsersActivityController < Api::V1::Accounts::BaseController
+  before_action :current_account
 
   def inboxes
     channel_ids = Channel::WebWidget.where(account_id: Current.account.id).pluck(:id)
@@ -7,9 +9,10 @@ class Api::V0::UsersActivityController < Api::V1::Accounts::BaseController
   end
 
   def get
+    user_activities = UserActivity.where(
+      inbox_id: params[:inbox_id],
+      account_id: Current.account.id
+    )
+    render json: user_activities
   end
-
-  def create
-  end
-
 end

@@ -15,8 +15,8 @@ class MonitoringApiClient extends CacheEnabledApiClient {
     return axios.get(`${this.url}`);
   }
 
-  getCampaigns(inboxId) {
-    return axios.get(`${this.url}/${inboxId}/monitoring`);
+  getActiveUsers(inboxId) {
+    return axios.get(`${this.url}/${inboxId}`);
   }
 }
 

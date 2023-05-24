@@ -23,6 +23,7 @@
               >
                 {{ inbox.name }}
               </label>
+
               <div class="block max-h-600px overflow-y-scroll border-light">
                 <table class="border-b-light-3 p-2">
                   <thead>
@@ -47,25 +48,33 @@
                       >
                         Country
                       </td>
+                      <td
+                        class="border-b-light-2 py-1 px-2 border-b-none font-medium"
+                      >
+                        Time
+                      </td>
                     </tr>
                   </thead>
                   <tbody>
                     <tr
                       v-for="(active_user,
-                      active_user_index) in inbox.active_users"
+                      active_user_index) in inbox.users_activity"
                       :key="active_user_index"
                     >
                       <td class="border-b-light-2 py-1 px-2 border-b-none">
-                        {{ active_user }}
+                        {{ active_user.ip_address }}
                       </td>
                       <td class="border-b-light-2 py-1 px-2 border-b-none">
-                        Gill
+                        {{ active_user.page_url }}
                       </td>
                       <td class="border-b-light-2 py-1 px-2 border-b-none">
-                        Smith
+                        {{ active_user.page_url }}
                       </td>
                       <td class="border-b-light-2 py-1 px-2 border-b-none">
-                        50
+                        {{ active_user.country }}
+                      </td>
+                      <td class="border-b-light-2 py-1 px-2 border-b-none">
+                        {{ active_user.created_at }}
                       </td>
                     </tr>
                   </tbody>
@@ -82,6 +91,7 @@
 import './assets/monitoring.style.css';
 import Sidebar from 'dashboard/components/layout/Sidebar';
 import MonitoringApiClient from '../../../api/monitoring';
+
 export default {
   components: {
     Sidebar,
@@ -152,11 +162,16 @@ export default {
     toggleAccountModal() {
       this.showAccountModal = !this.showAccountModal;
     },
-    async fetchWebInboxes() {
-      this.inboxes = (await MonitoringApiClient.getAllSites()).data;
-    },
-    async fetchInboxUsers() {
-      this.inboxes = (await MonitoringApiClient.getAllSites()).data;
+    fetchWebInboxes() {
+      MonitoringApiClient.getAllSites().then(inbox_res => {
+        let inboxes = inbox_res.data;
+        inboxes.forEach(inbox => {
+          MonitoringApiClient.getActiveUsers(inbox.id).then(res => {
+            inbox.users_activity = res.data;
+            this.inboxes.push(inbox);
+          });
+        });
+      });
     },
   },
 };

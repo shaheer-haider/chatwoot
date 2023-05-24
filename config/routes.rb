@@ -430,5 +430,5 @@ Rails.application.routes.draw do
   # Live User Monitoring Routes
   get 'api/v1/accounts/:account_id/monitoring', to: 'api/v0/users_activity#inboxes'
   get 'api/v1/accounts/:account_id/monitoring/:inbox_id', to: 'api/v0/users_activity#get'
-  post 'api/v1/accounts/:account_id/monitoring/:inbox_id', to: 'api/v0/users_activity#create'
+  post 'api/v1/accounts/:account_id/monitoring/:inbox_id', to: 'api/v0/users_activity_creation_api#create'
 end
