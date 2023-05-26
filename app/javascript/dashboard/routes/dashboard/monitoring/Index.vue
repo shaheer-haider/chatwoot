@@ -65,7 +65,7 @@
                         {{ active_user.ip_address }}
                       </td>
                       <td class="border-b-light-2 py-1 px-2 border-b-none">
-                        {{ active_user.page_url }}
+                        {{ active_user.previous_page }}
                       </td>
                       <td class="border-b-light-2 py-1 px-2 border-b-none">
                         {{ active_user.page_url }}

@@ -18,6 +18,11 @@ export default new Router({
       component: () => import('./views/Campaigns.vue'),
     },
     {
+      path: '/pre-messages',
+      name: 'pre-messages',
+      component: () => import('./views/AgentsPreMessages.vue'),
+    },
+    {
       path: '/',
       component: ViewWithHeader,
       children: [

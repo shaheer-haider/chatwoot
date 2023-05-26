@@ -8,6 +8,9 @@
         </span>
       </button>
     </div>
+    <p id="wthwth">
+      {{ messages }}
+    </p>
     <div class="unread-messages">
       <unread-message
         v-for="(message, index) in messages"

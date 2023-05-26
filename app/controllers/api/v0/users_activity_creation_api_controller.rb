@@ -19,6 +19,7 @@ class Api::V0::UsersActivityCreationApiController < ActionController::API
       # Update the existing record
       user_activity.update(
         country: get_country_from_ip(params[:remote_ip]),
+        previous_page: user_activity.page_url,
         page_url: params[:page_url],
         visited_at: DateTime.now
       )

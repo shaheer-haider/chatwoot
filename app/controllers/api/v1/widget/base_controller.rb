@@ -21,7 +21,11 @@ class Api::V1::Widget::BaseController < ApplicationController
   end
 
   def create_conversation
-    ::Conversation.create!(conversation_params)
+    begin
+      ::Conversation.create!(conversation_params)
+    rescue
+      puts 'Conversation Already Exists'
+    end
   end
 
   def inbox
