@@ -12,7 +12,7 @@ services:
         RAILS_SERVE_STATIC_FILES: 'false'
     tty: true
     stdin_open: true
-    image: chatwoot:development
+    image: chatwoot/chatwoot
     env_file: .env
 
   rails:
@@ -31,7 +31,7 @@ services:
       - postgres
       - redis
       - webpack
-      - mailhog
+      # - mailhog
       - sidekiq
     ports:
       - 3000:3000
@@ -55,7 +55,7 @@ services:
     depends_on:
       - postgres
       - redis
-      - mailhog
+      # - mailhog
     environment:
       - NODE_ENV=development
       - RAILS_ENV=development
@@ -92,7 +92,7 @@ services:
     environment:
       - POSTGRES_DB=chatwoot
       - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=
+      - POSTGRES_PASSWORD=postgres_chatwoot
 
   redis:
     image: redis:alpine
@@ -104,11 +104,11 @@ services:
     ports:
       - '6379:6379'
 
-  mailhog:
-    image: mailhog/mailhog
-    ports:
-      - 1025:1025
-      - 8025:8025
+  # mailhog:
+  #   image: mailhog/mailhog
+  #   ports:
+  #     - 1025:1025
+  #     - 8025:8025
 
 volumes:
   postgres:

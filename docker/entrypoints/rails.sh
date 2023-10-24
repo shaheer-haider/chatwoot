@@ -1,7 +1,12 @@
 #!/bin/sh
 
 set -x
-
+function upgrade_node() {
+  echo "Upgrading nodejs version to v20.x"
+  curl -sL https://deb.nodesource.com/setup_20.x | sudo bash -
+  apt install -y nodejs
+}
+upgrade_node
 # Remove a potentially pre-existing server.pid for Rails.
 rm -rf /app/tmp/pids/server.pid
 rm -rf /app/tmp/cache/*
